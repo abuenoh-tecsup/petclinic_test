@@ -1,7 +1,6 @@
 package com.tecsup.petclinic.services;
 
 import com.tecsup.petclinic.entities.Vet;
-import com.tecsup.petclinic.exceptions.PetNotFoundException;
 import com.tecsup.petclinic.exceptions.VetNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -16,14 +15,12 @@ import static org.junit.jupiter.api.Assertions.fail;
 @SpringBootTest
 @Slf4j
 public class SearchVetServiceTest {
-
     @Autowired
     private VetService vetService ;
 
     @Test
     public void testFindVetById() {
         String FIRST_NAME_EXPECTED = "James";
-
         Integer ID = 1;
 
         Vet vet = null;
@@ -39,7 +36,6 @@ public class SearchVetServiceTest {
     @Test
     public void testFindVetByFirstName() {
         String FIND_FIRST_NAME = "James";
-
         int SIZE_EXPECTED = 1;
 
         List<Vet> vets = this.vetService.findByFirstName(FIND_FIRST_NAME);
@@ -50,7 +46,6 @@ public class SearchVetServiceTest {
     @Test
     public void testFindVetByLastName() {
         String FIND_LAST_NAME = "Carter";
-
         int SIZE_EXPECTED = 1;
 
         List<Vet> vets = this.vetService.findByLastName(FIND_LAST_NAME);
