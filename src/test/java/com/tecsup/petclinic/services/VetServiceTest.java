@@ -13,6 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Slf4j
+/**
+ * Test pars Veterinario.
+ */
 public class VetServiceTest {
     @Autowired
     private VetService vetService ;

@@ -22,11 +22,11 @@ public class UpdateVetServiceTest {
     @Test
     public void testUpdateVet() {
 
-        String VET_FIRST_NAME = "Rafael";
-        String VET_LAST_NAME = "Ortega";
+        String VET_FIRST_NAME = "Alvaro";
+        String VET_LAST_NAME = "Bueno";
 
-        String UPDATED_VET_FIRST_NAME = "Eduardo";
-        String UPDATED_VET_LAST_NAME = "Bullon";
+        String UPDATED_VET_FIRST_NAME = "Fernando";
+        String UPDATED_VET_LAST_NAME = "Vera";
 
         Vet vet = new Vet(VET_FIRST_NAME, VET_LAST_NAME);
 
