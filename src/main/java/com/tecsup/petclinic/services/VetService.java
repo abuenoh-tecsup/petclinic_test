@@ -39,6 +39,12 @@ public interface VetService {
     List<Vet> findByFirstName(String firstName);
 
     /**
+     * @param lastName
+     * @return
+     */
+    List<Vet> findByLastName(String lastName);
+
+    /**
      * @return
      */
     List<Vet> findAll();
